@@ -6,7 +6,7 @@ window.TrelloPowerUp.initialize({
         // we recommend that you use a popup on click generally
         icon: GRAY_ICON, // don't use a colored icon here
         text: "Open Popup",
-        callback: onBtnClick,
+        callback: () => {},
         condition: "edit",
       },
       {
