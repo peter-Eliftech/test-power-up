@@ -1,3 +1,6 @@
+var GRAY_ICON =
+  "https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4bc6e88b7618%2Ficon-gray.svg";
+
 window.TrelloPowerUp.initialize({
   "card-buttons": function (t, opts) {
     return [
@@ -15,7 +18,7 @@ window.TrelloPowerUp.initialize({
         callback: function () {
           t.modal({
             // the url to load for the iframe
-            url: "./modal.html",
+            url: "./html/modal.html",
             // optional arguments to be passed to the iframe as query parameters
             // access later with t.arg('text')
             args: { text: "Hello" },
