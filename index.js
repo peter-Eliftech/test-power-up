@@ -7,6 +7,6 @@ const app = new Koa();
 
 // response
 app.use(cors({ origin: "https://trello.com" }));
-app.use(serve(path.join(__dirname, "/src/html/")));
+app.use(serve(path.join(__dirname, "/src")));
 
 app.listen(process.env.PORT || 3000);
