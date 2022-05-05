@@ -1,0 +1,19 @@
+{
+  "name": "tets-trello-power-up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-Eliftech/test-power-up.git"
+  },
+  "author": "Peter Kachur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-Eliftech/test-power-up/issues"
+  },
+  "homepage": "https://github.com/peter-Eliftech/test-power-up#readme"
+}
