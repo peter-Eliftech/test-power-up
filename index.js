@@ -1,5 +1,6 @@
 const Koa = require("koa");
 const serve = require("koa-static");
+const cors = require("@koa/cors");
 // const path = require("path");
 const app = new Koa();
 
