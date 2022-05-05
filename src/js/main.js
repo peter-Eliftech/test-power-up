@@ -5,16 +5,8 @@ window.TrelloPowerUp.initialize({
   "card-buttons": function (t, opts) {
     return [
       {
-        // usually you will provide a callback function to be run on button click
-        // we recommend that you use a popup on click generally
-        icon: GRAY_ICON, // don't use a colored icon here
-        text: "Open Popup",
-        callback: () => {},
-        condition: "edit",
-      },
-      {
         icon: GRAY_ICON,
-        text: "Snooze",
+        text: "Report",
         callback: function () {
           t.modal({
             // the url to load for the iframe
@@ -23,42 +15,17 @@ window.TrelloPowerUp.initialize({
             // access later with t.arg('text')
             args: { text: "Hello" },
             // optional color for header chrome
-            accentColor: "#F2D600",
+            accentColor: "#1DA1F2",
             // initial height for iframe
             height: 500, // not used if fullscreen is true
             // whether the modal should stretch to take up the whole screen
-            fullscreen: true,
+            fullscreen: false,
             // optional function to be called if user closes modal (via `X` or escape, etc)
             callback: () => console.log("Goodbye."),
             // optional title for header chrome
-            title: "appear.in meeting",
+            title: "Send telega message",
             // optional action buttons for header chrome
             // max 3, up to 1 on right side
-            actions: [
-              {
-                icon: GRAY_ICON,
-                url: "https://google.com",
-                alt: "Leftmost",
-                position: "left",
-              },
-              {
-                icon: GRAY_ICON,
-                callback: (tr) =>
-                  tr.popup({
-                    title: tr.localizeKey("appear_in_settings"),
-                    url: "settings.html",
-                    height: 164,
-                  }),
-                alt: "Second from left",
-                position: "left",
-              },
-              {
-                icon: GRAY_ICON,
-                callback: () => console.log(":tada:"),
-                alt: "Right side",
-                position: "right",
-              },
-            ],
           });
         },
       },
