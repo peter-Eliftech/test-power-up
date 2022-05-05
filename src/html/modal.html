@@ -4,6 +4,12 @@
 <head>
     <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
     <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+        }
+
         .toUser {
             width: 100%;
             height: 30px;
@@ -13,18 +19,23 @@
             width: 100%;
             height: 200px;
         }
+
+        .submit-btn {
+            align-self: flex-end;
+        }
     </style>
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
 </head>
 
 <body>
-    <form id="estimate">
-        <label for="to">Click me</label>
-        <input class="toUser" type="text" id="to">
-        <label for="msg-text">Click me</label>
-        <textarea class="message" type="text" id="msg-text">
-        <button type="submit" class="mod-primary">Save</button>
+    <form id="estimate" class="form">
+        <label for="to">To:</label>
+        <input class="toUser" type="text" name="to" placeholder="Type the recipient's name">
+        <label for="msg-text">Message:</label>
+        <textarea class="message" type="text" name="msg-text" placeholder="Type your message here"></textarea>
+        <button type="submit" class="submit-btn mod-primary">Send</button>
     </form>
+    <script src="../js/modal.js"></script>
 </body>
 
 </html>

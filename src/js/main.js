@@ -23,7 +23,7 @@ window.TrelloPowerUp.initialize({
             // optional function to be called if user closes modal (via `X` or escape, etc)
             callback: () => console.log("Goodbye."),
             // optional title for header chrome
-            title: "Send telega message",
+            title: "Send telegram message",
             // optional action buttons for header chrome
             // max 3, up to 1 on right side
           });
