@@ -8,9 +8,9 @@ window.TrelloPowerUp.initialize({
         icon: GRAY_ICON,
         text: "Report",
         callback: function () {
-          t.card("all").then((card) => {
-            console.log(card, "---all");
-          });
+          // t.card("all").then((card) => {
+          //   console.log(card, "---all");
+          // });
           t.modal({
             // the url to load for the iframe
             url: "./html/modal.html",
