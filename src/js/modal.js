@@ -1,4 +1,4 @@
-var t = TrelloPowerUp.iframe();
+const t = TrelloPowerUp.iframe();
 const estimateFormSubmit = function (e) {
   e.preventDefault();
   const { target } = e;
