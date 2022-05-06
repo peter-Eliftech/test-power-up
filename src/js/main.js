@@ -8,6 +8,7 @@ window.TrelloPowerUp.initialize({
         icon: GRAY_ICON,
         text: "Report",
         callback: function () {
+          console.log(t.getAll(), "----all");
           t.modal({
             // the url to load for the iframe
             url: "./html/modal.html",
